@@ -27,6 +27,7 @@ h3 {
 p {
   font-family: Georgia;
   padding: 0.5rem;
+  text-align: justify;
 }
 
 a {
@@ -42,7 +43,9 @@ a:hover {
   color: #ffc0cb;
 }
 
-img {
+#background_image {
+  background-image: url('/image/photo-1734192279506-45e56af5575f.jpeg');
+  background-size: 100% 100%;
 }
 
 button {
