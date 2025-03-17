@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Bootcamp Registration</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <article>
+      <header>
+        <h1>Coding Bootcamp Registration</h1>
+      </header>
+      <main>
+        <form action="#" method="post">
+          <label for="fname">Full Name <span class="required">*</span></label>
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter your full name"
+            required="required"
+          />
+
+          <label for="email">Email <span class="required">*</span></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required="required"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+          />
+
+          <label for="experience"
+            >Coding Experience <span class="required">*</span></label
+          >
+          <select id="experience" name="experience" required="required">
+            <option value="">Select your experience level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+
+          <label for="interests"
+            >What do you want to learn? <span class="required">*</span></label
+          >
+          <textarea
+            name="interests"
+            id="interests"
+            rows="4"
+            placeholder="Describe your learning goals"
+            required="required"
+          ></textarea>
+
+          <button type="submit">Register</button>
+        </form>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Coding Bootcamp.</p>
+      </footer>
+    </article>
+  </body>
+</html>

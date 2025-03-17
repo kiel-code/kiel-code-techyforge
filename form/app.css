@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0.6rem 0.4rem;
+}
+
+body {
+  font-family: Monospace;
+  font-size: 1rem;
+}
+
+#check,
+span {
+  font-size: 0.7rem;
+}
+
+span {
+  color: #fd0000;
+}
+
+.style,
+button {
+  width: 80%;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
+
+button {
+  border: none;
+  background-color: #0000fc;
+  color: #ffffff;
+  font-size: 1.1rem;
+}

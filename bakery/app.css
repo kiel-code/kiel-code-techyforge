@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Monospace;
+  background-color: #fdfaf6;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #ffcc99;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+h1#home {
+  font-variant: small-caps;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+main img {
+  max-width: 100%;
+  height: auto;
+  border: 0.1rem solid #dddddd;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #ffcc99;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #333333;
+}
+
+footer p {
+  margin: 0;
+}
+
+form {
+  max-width: 25rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid #cccccc;
+  border-radius: 0.3rem;
+}
+
+form button {
+  background-color: #ff6600;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #cc5200;
+}
