@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Styling Section -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f3f3;
+      }
+
+      #loader {
+        border: 0.3125em solid #d3d3d3;
+        border-top: 0.3125em solid #0000ff;
+        border-radius: 50%;
+        width: 3.125em;
+        height: 3.125em;
+        animation: spinner 2s linear infinite;
+      }
+
+      @keyframes spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <title>Animated Circular Loader</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div id="loader"></div>
+  </body>
+</html>
