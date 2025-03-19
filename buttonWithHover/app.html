@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Styling Section -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        position: relative;
+        background-color: rgb(240, 240, 240);
+      }
+
+      #button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0.9375em 1.875em;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(45deg, rgb(0, 0, 255), rgb(128, 0, 128));
+        border: none;
+        border-radius: 0.5em;
+        cursor: pointer;
+        transition: all 0.6s ease;
+      }
+
+      #button:hover {
+        background: linear-gradient(
+          45deg,
+          rgb(128, 0, 128),
+          rgb(255, 192, 203)
+        );
+        transform: translate(-50%, -50%) scale(1.1);
+        box-shadow: 0 0.35em 0.9375em rgba(0, 0, 0, 0.9);
+        outline: 0.15em solid rgb(0, 0, 255);
+        font-size: 1.2em;
+      }
+    </style>
+
+    <title>Interactive Button with Hover Effects</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <button type="button" id="button">Click Me</button>
+  </body>
+</html>
