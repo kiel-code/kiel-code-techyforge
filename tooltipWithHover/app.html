@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Style Section -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: Monospace;
+      }
+
+      #tooltip-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      #tooltip-button,
+      #tooltip-text {
+        border-radius: 0.3125em;
+        color: #fff;
+        text-align: center;
+      }
+
+      #tooltip-button {
+        padding: 0.625em 1.25em;
+        font-size: 1.1em;
+        cursor: pointer;
+        border: none;
+        background-color: #007bff;
+      }
+
+      #tooltip-text {
+        visibility: hidden;
+        width: 8.75em;
+        background-color: #333;
+        padding: 0.625em 0;
+        position: absolute;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        box-shadow: 0 0.2em 0.625em #00000080;
+        font-size: 1.25em;
+      }
+
+      #tooltip-text::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 0.3125em solid;
+        border-color: #333 transparent transparent transparent;
+      }
+
+      #tooltip-container:hover #tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+
+    <title>Animated Tooltip with Hover Effect</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div id="tooltip-container">
+      <button id="tooltip-button">Hover Me</button>
+
+      <span id="tooltip-text">Tooltip Text</span>
+    </div>
+  </body>
+</html>
