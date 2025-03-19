@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Styling Section -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0.25em auto;
+        padding: 0.7em;
+      }
+
+      .card {
+        display: inline-block;
+        margin: 1%;
+        width: 30%;
+        border: 0.0625em solid #ddd;
+        border-radius: 0.5em;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card-content {
+        padding: 1em;
+      }
+
+      .card h3 {
+        margin: 0 0 0.625em;
+      }
+
+      .card p {
+        margin: 0;
+        color: #555;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+        margin: 1.2em;
+      }
+
+      /* Media Query Section */
+      @media (max-width: 768px) {
+        .card {
+          width: 45%;
+          margin: auto;
+        }
+      }
+      @media (max-width: 480px) {
+        .card {
+          width: 85%;
+        }
+      }
+    </style>
+
+    <title>Responsive Card Layout</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div class="card">
+      <img
+        src="../images/bag-lady.jpeg"
+        alt="A lady lifting a bag"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>Bag Lady</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../images/tree.jpeg"
+        alt="A Tree at the middle"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>A Tree</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../images/luxury.jpeg"
+        alt="A Luxury setting"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>Luxury Setting</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../images/outside-dinner.jpeg"
+        alt="Outside Dinner Setting"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>Outside Dinner</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../images/zebra.jpeg"
+        alt="A Zebra at the middle"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>Zebra</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../images/pillar.jpeg"
+        alt="A Front view Pillar Design"
+        width="300"
+        height="200"
+      />
+      <div class="card-content">
+        <h3>Pillar Design</h3>
+        <p>This is a short description for ...</p>
+      </div>
+    </div>
+  </body>
+</html>
