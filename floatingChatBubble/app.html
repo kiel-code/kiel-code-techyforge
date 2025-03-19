@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Icon Section -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=sms"
+    />
+
+    <!-- CSS Style Section -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+      }
+
+      #chat-bubble {
+        position: fixed;
+        right: 1.25em;
+        bottom: 1.25em;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      #chat-bubble:hover {
+        background-color: #0056b3;
+        transform: translateY(-0.3125em);
+      }
+    </style>
+
+    <title>Floating Chat Bubble</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div id="chat-bubble">
+      <span class="material-symbols-outlined"> sms </span>
+    </div>
+  </body>
+</html>
