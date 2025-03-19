@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Style Section -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0.625em auto;
+      }
+
+      #fruits-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.625em;
+        justify-content: center;
+      }
+
+      .fruits-item {
+        position: relative;
+        display: inline-block;
+        width: 15.625em;
+        height: 12.5em;
+        overflow: hidden;
+        border-radius: 0.625em;
+      }
+
+      .fruits-item:hover {
+        box-shadow: 0.1em 0.1em 0.31em #ffd700cc;
+      }
+
+      .fruits-item img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.7s ease;
+      }
+
+      .fruits-item:hover img {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000080;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.7s ease;
+        font-size: 1.2em;
+      }
+
+      .fruits-item:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+
+    <title>Interactive Image Gallery</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div id="fruits-wrapper">
+      <div class="fruits-item">
+        <img
+          src="../images/fruits-1.jpeg"
+          alt="A desert Fruits"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">First Image</span>
+      </div>
+
+      <div class="fruits-item">
+        <img
+          src="../images/banana.jpeg"
+          alt="A bunch of Banana"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">Second Image</span>
+      </div>
+
+      <div class="fruits-item">
+        <img
+          src="../images/food-1.jpeg"
+          alt="A desert Food"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">Third Image</span>
+      </div>
+
+      <div class="fruits-item">
+        <img
+          src="../images/food-2.jpeg"
+          alt="A Food with Beaf"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">Fourth Image</span>
+      </div>
+
+      <div class="fruits-item">
+        <img
+          src="../images/pawpaw.jpeg"
+          alt="Pawpaw Fruit"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">Fifth Image</span>
+      </div>
+
+      <div class="fruits-item">
+        <img
+          src="../images/fruits-2.jpeg"
+          alt="Slice Fruits"
+          width="200"
+          height="150"
+        />
+        <span class="overlay">Sixth Image</span>
+      </div>
+    </div>
+  </body>
+</html>
