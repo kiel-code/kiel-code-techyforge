@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- CSS Style Section -->
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgb(240, 240, 240);
+        font-family: Arial, sans-serif;
+        margin: 1.25em auto;
+      }
+
+      #pricing-table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25em;
+      }
+
+      .pricing-card {
+        display: inline-block;
+        width: 12.5em;
+        padding: 1.25em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.75em;
+        box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.5);
+        text-align: center;
+        transition: all 0.6s ease;
+      }
+
+      .pricing-card:hover {
+        transform: scale(1.05);
+        background-color: rgb(249, 249, 249);
+        box-shadow: 0.2em 0.15em 0.75em rgba(0, 123, 255, 0.6);
+      }
+
+      .pricing-card h3 {
+        margin: 0 0 0.625em;
+        font-size: 1.5em;
+      }
+
+      .pricing-card p {
+        margin-bottom: 0.625em;
+        font-size: 1em;
+        color: rgb(102, 102, 102);
+      }
+
+      .pricing-card .price {
+        font-size: 2em;
+        color: rgb(0, 123, 255);
+        margin: 1.25em 0;
+      }
+
+      .pricing-card .signup-btn {
+        display: inline-block;
+        padding: 0.625em 1.25em;
+        margin-top: 0.625em;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 123, 255);
+        border: none;
+        border-radius: 0.5em;
+        text-decoration: none;
+        transition: all 0.5s ease;
+      }
+
+      .pricing-card .signup-btn:hover {
+        background-color: rgb(0, 86, 179);
+        font-size: 1.07em;
+      }
+    </style>
+
+    <title>Animated Pricing Cards</title>
+  </head>
+  <body>
+    <!-- HTML Section -->
+    <div id="pricing-table">
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <p>Essential features for personal use.</p>
+        <span class="price">$9.99/m</span>
+        <a href="#" class="signup-btn">Sign Up</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Standard</h3>
+        <p>Advanced features for small teams.</p>
+        <span class="price">$29.99/m</span>
+        <a href="#" class="signup-btn">Sign Up</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Premium</h3>
+        <p>All features for large organizations.</p>
+        <span class="price">$49.99/m</span>
+        <a href="#" class="signup-btn">Sign Up</a>
+      </div>
+    </div>
+  </body>
+</html>
